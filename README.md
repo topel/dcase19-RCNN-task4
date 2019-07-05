@@ -33,6 +33,8 @@ The submission to the challenge was made with a single small RCNN model (about 1
 
 ![model Image](https://github.com/topel/dcase19-RCNN-task4/blob/master/model_1.png)
 
+- "at": Audio Tagging, "loc": localization
+
 The model has been trained on the weak and synthetic training datasets with binary cross-entropy, respectively at recording-level for both subsets and at frame-level for the synthetic subset that provides strong labels. We originally trained it for 120 epochs but the best model on the val subset was the one obtained after 90 epochs only.
 
 Class-dependent thresholds are optimized on the validation subset for:
